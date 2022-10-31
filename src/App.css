@@ -1,23 +1,17 @@
-h1{
-  background-color: green;
-  color: red;
+body{
+  background-color: #1E1E1E;;
+  margin: 0;
+  padding: 0;
 }
-
-nav {
-  display: flex;
-  font-size: 16px;
-  color: black;
-  justify-content: space-around;
-}
-
-.link {
-  text-decoration: underline;
+.app {
+  margin: 0;
+  /* background-color: #1ce681; */
 }
 
 /* NAVBAR */
 /* =====NAV BAR====*/
 .my-nav{
-  background-color: #cf54c9;
+  background-color: #AAD36C;
   text-align: center;
   position:relative;
   z-index: 999;
@@ -66,6 +60,7 @@ nav {
   transform: scale(1 , 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+ 
   }
   /* #cc88c9 */
   .links, .home{
@@ -95,3 +90,32 @@ nav {
   align-items: center;
   }
   
+  /* ======HOME==== */
+  .cover-photo {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-radius: 50%;
+    width: 316px;
+    height: 313px;
+  }
+  button{
+    background-color: #549A0A;
+    width: 160px;
+    height: 48px;
+    border-radius: 10px;
+
+  }
+  .hom{
+    display:flex;
+    flex-direction: column;
+    /* justify-content:space-around; */
+    align-items: center;
+    
+  }
+  .button{
+    margin-top: 30px;
+  }
+
+  .sub-head{
+    color: #549A0A;
+  }

@@ -2,7 +2,7 @@ import React from 'react'
 import menuData from './menuData'
 import { useParams, useNavigate} from 'react-router-dom'
 
-export default function MenuDetails() {
+function MenuDetails() {
     const {servicesId} = useParams()
     const navigateTo = useNavigate()
     const thisService = menuData.find(service => service._id === servicesId)
@@ -21,3 +21,4 @@ export default function MenuDetails() {
     </div>
   )
 }
+export default MenuDetails

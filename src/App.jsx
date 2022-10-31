@@ -12,15 +12,16 @@ function App() {
 
   return (
    
-    <div>
+    <div className='app'>
             <NavBar/>
-           <Routes>
-           <Route exact path='/' element={<Home />}/>
-           <Route  path='/About' element={<About/>}/> 
-           <Route exact path='/Menu' element={<Menu />}/>   
-           <Route path='/Menu/:servicesId' element={<MenuDetails/>}/>  
+              <Routes>
+                    <Route exact path='/' element={<Home/>}/>
+                    <Route  path='/About' element={<About/>}/> 
+                    <Route exact path='/Menu' element={<Menu />}/>   
+                    <Route path='/Menu/:servicesId' element={<MenuDetails/>}/>  
+              </Routes>
+         
 
-        </Routes>
     </div>
   
   )

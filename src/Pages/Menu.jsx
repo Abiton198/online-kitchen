@@ -3,7 +3,7 @@ import {Link, Routes, Route, useParams} from 'react-router-dom'
 import menuData from './menuData'
 
 
-export default function Menu() {
+function Menu() {
 
     const services = menuData.map(service =>(
         <div key={service._id}>
@@ -35,3 +35,4 @@ export default function Menu() {
     </div>
   )
 }
+export default Menu
