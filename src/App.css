@@ -1,0 +1,97 @@
+h1{
+  background-color: green;
+  color: red;
+}
+
+nav {
+  display: flex;
+  font-size: 16px;
+  color: black;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+/* NAVBAR */
+/* =====NAV BAR====*/
+.my-nav{
+  background-color: #cf54c9;
+  text-align: center;
+  position:relative;
+  z-index: 999;
+  width: 100%;
+  margin: 0;
+  }
+  /* =====Hamburger=====3 lines in navbar */
+  .nav-toggle-label span, 
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+  }
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+  content: '';
+  position: absolute;
+  }
+  
+  .nav-toggle-label span::before {
+  bottom: 7px;
+  }
+  
+  .nav-toggle-label span::after {
+  top: 7px;
+  }
+  
+  .nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 550ms;
+  }
+  nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(222, 231, 206);
+  width: 100%;
+  transform: scale(1 , 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  }
+  /* #cc88c9 */
+  .links, .home{
+  color: #b109a3;
+  list-style: none;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-size: 1.2rem;
+  text-decoration: none;  
+  opacity: 0;
+  transition: opacity 250ms ease-in-out 550ms;
+  
+  }
+  .links:hover, .home:hover {
+  color: #1ce681;
+  }
+  .nav-toggle:checked ~ nav{
+  transform:scale(1,1) ;
+  }
+  .nav-toggle-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  }
+  
