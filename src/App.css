@@ -2,6 +2,11 @@ body{
   background-color: #1E1E1E;;
   margin: 0;
   padding: 0;
+  align-items: center;
+  background-image: url('./img/food.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .app {
   margin: 0;
@@ -109,7 +114,7 @@ body{
     display:flex;
     flex-direction: column;
     /* justify-content:space-around; */
-    align-items: center;
+  
     
   }
   .button{
@@ -118,4 +123,32 @@ body{
 
   .sub-head{
     color: #549A0A;
+  }
+  .image {
+    width: 100%;
+  }
+  .text, .heading{
+    color: beige;
+    background-position-x: center;
+    position: relative;
+  }
+
+  /* ======ABOUT=== */
+  .about{
+    color: #1ce681;
+  }
+  .about-image{
+    width: 316px;
+    height: 313px;
+    border-radius: 50%;
+  }
+
+
+  /* =====MENU=== */
+  .menu{
+    background-color: #1ce681;
+  }
+  .menu-image{
+    width: 300px;
+    height: 300px;
   }

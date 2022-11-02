@@ -4,7 +4,7 @@ import About from './Pages/About'
 import Menu from './Pages/Menu'
 import './App.css'
 import {Route, Routes} from 'react-router-dom'
-import MenuDetails from './Pages/MenuDetails'
+import MenuDetails from './hooks/MenuDetails'
 import NavBar from './Pages/NavBar'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
                     <Route exact path='/' element={<Home/>}/>
                     <Route  path='/About' element={<About/>}/> 
                     <Route exact path='/Menu' element={<Menu />}/>   
-                    <Route path='/Menu/:servicesId' element={<MenuDetails/>}/>  
+                    <Route path='/Menu:menuId' element={<MenuDetails/>}/>  
               </Routes>
          
 

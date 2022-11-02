@@ -5,32 +5,41 @@ import menuData from './menuData'
 
 function Menu() {
 
-    const services = menuData.map(service =>(
-        <div key={service._id}>
+    const menus = menuData.map(item =>(
+        <div key={item._id}>
             <h3 className='link'>
-            <Link to={`services/${service._id}`}> {service.name}</Link> {service.price}
-            </h3>
+            <Link to={`menu/${item._id}`}> {item.name} <hr/></Link> 
+         </h3>
+         <img src={item.image} alt='' className='menu-image'/>
+         {/* <p>{item.description}</p>
+         <p>R {item.price}</p> */}
+            {/* 
+            <Routes>
+              <Route exact path='/Menu/' element={<Menu/>}/>
+              <Route  path='/Menu/item._id/1' element={<Menu/>}/>
+              <Route  path='/Menuitem._id/2' element={<Menu/>}/>
+            </Routes> */}
         </div>
     ))
 
   return (
       <div >
         <h1>Menu List</h1>
-          {services}
-          <hr/>
+          {menus}
+        
       {/* <ul>
         <li><Link to='/Menu'>BreakFast</Link> </li>
         <li><Link to="/">Lunch</Link> </li>
         <li><Link to='/'>Dinner</Link> </li>
         <li><Link to="/">Desserts</Link> </li>
       </ul>
-
         <Routes>
             <Route exact path='/Menu'><Menu/></Route>
-            <Route  path='/Menu'><Lunch/></Route>
-            <Route  path='/Menu'><Dinner/></Route>
+            <Route  path='/Breakfast'><Lunch/></Route>
+            <Route  path='/Starters'><Dinner/></Route>
             <Route  path='/Menu'><Desserts/></Route>
-        </Routes>  */}
+        </Routes>  
+        */}
 
     </div>
   )
