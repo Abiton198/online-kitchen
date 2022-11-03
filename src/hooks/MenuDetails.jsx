@@ -12,24 +12,39 @@ function MenuDetails() {
         console.log("clicked")
         setTimeout(()=> {navigateTo.push('/Menu')},2000)}
         navigateTo.replace('')
+
+const menuItems = menuData.map(item => {
   return (
-    <div className='menu'>
-            <h1>Detailed Menu Page</h1>
-            
-            <h3>{thisMenu.name}</h3>
+      <div className='menu'>
 
-            <p>{thisMenu.description}</p>
+        <h1>{item.name}</h1>
 
-            <p>{thisMenu.price}</p>
+        <h3>{item.name}</h3>
 
-            <hr/>
+        <p>{item.description}</p>
 
-            {/* <h3>{thisService.name}-{thisService.price}</h3>
-            <p>{thisService.description}</p>
-            <hr/> */}
+        <p>{item.price}</p>
 
-            <button onClick={handleChange}>Go back to Menu</button>
-    </div>
+        <button onClick={handleChange}>Go back to Menu</button>
+      </div>
   )
+  
+})
+// )
+//   return (
+//     <div className='menu'>
+//             <h1>Detailed Menu Page</h1>
+
+//             <hr/>
+
+//             {/* <h3>{thisService.name}-{thisService.price}</h3>
+//             <p>{thisService.description}</p>
+//             <hr/> */}
+
+//             <button onClick={handleChange}>Go back to Menu</button>
+//     </div>
+//   )
 }
 export default MenuDetails
+
+//tsk make menu details appear on page.

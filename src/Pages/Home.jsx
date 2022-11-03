@@ -23,9 +23,20 @@ import blob from '../assets/blob-home.svg'
 
             
               <div className='button'>
-              <button onClick={viewMenu}> Order Now </button>
+                 <button onClick={viewMenu}> Order Now </button>
               </div>
+
+              
     </div>
+
+
+// const className = cartItems.length > 0 ? "ri-shopping-cart-fill ri-fw ri-2x" : "ri-shopping-cart-line ri-fw ri-2x"
+//     return (
+//         <header>
+//             <Link to='/'><h2>Pic Some</h2></Link>
+//             <Link to='/Cart'><i className={className}></i></Link>
+//         </header>
+
   )
 }
 export default Home
