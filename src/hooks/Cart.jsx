@@ -12,3 +12,4 @@ export default function Cart(props) {
 
 //import context
 //update the component using props
+//create a cartItems component 

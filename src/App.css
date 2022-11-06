@@ -94,6 +94,15 @@ body{
   display: flex;
   align-items: center;
   }
+
+  .bar-display{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header{
+    margin-left: 100px;
+  }
   
   /* ======HOME==== */
   .cover-photo {
