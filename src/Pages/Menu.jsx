@@ -1,10 +1,39 @@
-import React from 'react'
-import {Link, Routes, Route, useParams} from 'react-router-dom'
+import {useContext} from 'react'
+import useHover from '../hooks/useHover'
 import menuData from './menuData'
+import { Context } from './useContext'
+import {Link} from 'react-router-dom'
 
 
-function Menu() {
+function Menu({className, image}) {
+  const[hovered, ref] = useHover()
+  const {toggleFavorite, addToCart, removeFromCart} = useContext(Context)
 
+
+  //func to make the heart icon full when hovered upon or empty
+  function heartIcon(){
+    if (image.isFavorite){
+      return <i className="ri-heart-fill favorite" 
+              onClick={()=> removeFromCart(image.id)}>
+              </i>
+  } else if(hovered){
+      return <i className="ri-heart-line favorite" 
+              onClick={() => toggleFavorite(image.id)}>
+              </i>
+  }
+  }
+
+
+    //function to make image change to cart image and added to the cart
+    //some() === to indicate on selected items for cart
+  function cartIcon(){
+    const alreadyInCart = cartItems.some(item => item.id === image.id)
+    if(alreadyInCart){
+      return <i className="ri-shopping-cart-fill cart" onClick={()=>removeFromCart(image.id)}></i>
+  }else if(hovered){
+      return <i className="ri-add-circle-line cart" onClick={()=>addToCart(image)}></i>
+  }
+  }
 
   // var to display the image from the dataMenu
     const menus = menuData.map(item =>(
@@ -18,24 +47,14 @@ function Menu() {
     ))
 
   return (
-      <div >
+      <div className={`${className} image-container`} 
+        ref={ref}
+      >
         <h1>Menu List</h1>
           {menus}
+          {heartIcon}
+          {cartIcon}
         
-      {/* <ul>
-        <li><Link to='/Menu'>BreakFast</Link> </li>
-        <li><Link to="/">Lunch</Link> </li>
-        <li><Link to='/'>Dinner</Link> </li>
-        <li><Link to="/">Desserts</Link> </li>
-      </ul>
-        <Routes>
-            <Route exact path='/Menu'><Menu/></Route>
-            <Route  path='/Breakfast'><Lunch/></Route>
-            <Route  path='/Starters'><Dinner/></Route>
-            <Route  path='/Menu'><Desserts/></Route>
-        </Routes>  
-        */}
-
     </div>
   )
 }
