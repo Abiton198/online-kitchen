@@ -5,20 +5,15 @@ import menuData from './menuData'
 
 function Menu() {
 
+
+  // var to display the image from the dataMenu
     const menus = menuData.map(item =>(
         <div key={item._id}>
             <h3 className='link'>
             <Link to={`menu/${item._id}`}> {item.name} <hr/></Link> 
          </h3>
          <img src={item.image} alt='' className='menu-image'/>
-         {/* <p>{item.description}</p>
-         <p>R {item.price}</p> */}
-            {/* 
-            <Routes>
-              <Route exact path='/Menu/' element={<Menu/>}/>
-              <Route  path='/Menu/item._id/1' element={<Menu/>}/>
-              <Route  path='/Menuitem._id/2' element={<Menu/>}/>
-            </Routes> */}
+    
         </div>
     ))
 

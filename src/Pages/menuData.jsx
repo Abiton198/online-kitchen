@@ -18,13 +18,13 @@ export default [
         "price": 350,
         "_id": "3",
         "description": "The best main meal available on planet.",
-        "image":"https://www.pexels.com/photo/close-up-photo-of-grilled-chicken-106343/"
+        "image":"https://images.pexels.com/photos/1893556/pexels-photo-1893556.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1893556.jpg&fm=jpg&_gl=1*1eckq6i*_ga*MTg4OTY1NTU3Ni4xNjY3MTg0ODk1*_ga_8JE65Q40S6*MTY2Nzg0MzcxNS40LjEuMTY2Nzg0MzkwNS4wLjAuMA.."
     },
     {
         "name": "Salaads",
         "price": 100,
         "_id": "4",
         "description": "Keep your standards at top-notch.",
-        "":"https://www.pexels.com/photo/vegetable-salad-on-white-ceramic-plate-1211887/"
+        "":"https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=pexels-ella-olsson-1640777.jpg&fm=jpg&_gl=1*dg7jd4*_ga*MTg4OTY1NTU3Ni4xNjY3MTg0ODk1*_ga_8JE65Q40S6*MTY2Nzg0MzcxNS40LjEuMTY2Nzg0Mzc1My4wLjAuMA.."
     }
 ]
