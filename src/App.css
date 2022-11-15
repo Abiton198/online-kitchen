@@ -1,12 +1,11 @@
 body{
-  background-color: #1E1E1E;;
   margin: 0;
   padding: 0;
   align-items: center;
-  background-image: url('./img/food.jpeg');
+  /* background-image: url('./img/food.jpeg');
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .app {
   margin: 0;
@@ -161,3 +160,41 @@ body{
     width: 300px;
     height: 300px;
   }
+
+  /* ======ICONS===== */
+
+.favorite {
+  color: var(--red);
+  font-size: 1.2rem;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.ri-heart-fill {
+  opacity: .7;
+}
+
+.ri-delete-bin-line, .ri-delete-bin-fill {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.cart {
+  color: var(--blue);
+  font-size: 1.2rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.cart-item {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto;
+}

@@ -1,10 +1,10 @@
 import React from 'react'
 import Home from './Pages/Home'
-import Menu from './Pages/Menu'
 import './App.css'
 import {Route, Routes} from 'react-router-dom'
-import MenuDetails from './hooks/MenuDetails'
 import NavBar from './hooks/NavBar'
+import Cart from './hooks/Cart'
+import CartItems from './hooks/CartItems'
 
 function App() {
 
@@ -15,8 +15,9 @@ function App() {
             <NavBar/>
               <Routes>
                     <Route exact path='/' element={<Home/>}/>
-                    <Route exact path='/Menu' element={<Menu />}/>   
-                    <Route path='/Menu:menuId' element={<MenuDetails/>}/>  
+                    <Route path='/CartItems' element={<CartItems />}/>  
+                    <Route path='/Cart' element={<Cart/>}/> 
+                    
               </Routes>
          
 
