@@ -17,10 +17,28 @@ body{
 .my-nav{
   background-color: #AAD36C;
   text-align: center;
-  position:relative;
+  position:fixed;
   z-index: 999;
   width: 100%;
   margin: 0;
+ 
+  }
+  .cart-number{
+    display: flex;
+    
+  }
+
+  .count{
+    position: relative;
+    z-index: -1;
+    top: -21px;
+    padding: 3px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: right;
   }
   /* =====Hamburger=====3 lines in navbar */
   .nav-toggle-label span, 
@@ -51,6 +69,7 @@ body{
   .nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 550ms;
+  
   }
   nav {
   position: absolute;
@@ -64,7 +83,7 @@ body{
   transform: scale(1 , 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
- 
+  
   }
   /* #cc88c9 */
   .links, .home{
@@ -102,6 +121,10 @@ body{
   header{
     margin-left: 100px;
   }
+
+  #nav-toggle {
+    display: none;
+  }
   
   /* ======HOME==== */
   .cover-photo {
@@ -136,7 +159,7 @@ body{
     width: 100%;
   }
   .text, .heading{
-    color: beige;
+    color: rgb(65, 65, 3);
     background-position-x: center;
     position: relative;
   }
@@ -197,4 +220,22 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-columns: auto;
+}
+
+@media (max-width:700px) {
+  .hom{
+    margin: 50px;
+  }
+  .my-nav{
+    margin: 0;
+  }
+  .bar-display {
+    position:relative;
+  }
+  .app{
+    position:absolute;
+  }
+  .cover-photo{
+    margin-top: 20px;
+  }
 }

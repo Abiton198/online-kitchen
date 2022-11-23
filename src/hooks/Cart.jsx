@@ -7,7 +7,7 @@ import CartItems from './CartItems'
 
 export default function Cart() {
   const {cartItems, emptyCart} = useContext(Context)
-const cartItemElements = menuData.map((item) => (<CartItems key={item._id} item={item}/>) ) // <Menu key={item.id} item={item}/>
+const cartItemElements = menuData.map((item) => (<CartItems key={item.id} item={item}/>) ) // <Menu key={item.id} item={item}/>
   const totalCost = 5.50 * cartItems
   const totalCostDisplay = totalCost.toLocaleString('en-US', {style:'currency', currency:'ZAR' })
   const [buttonText, setButtonText] = useState('Place Order')

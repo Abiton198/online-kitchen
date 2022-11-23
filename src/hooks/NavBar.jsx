@@ -12,18 +12,22 @@ export default function NavBar() {
         <div className='bar-display'>
               <h3 className='logo'>Food_My_Way</h3>
               <header>
-                <Link to='/'></Link>
-                <Link to='/Cart'><i className={className}></i></Link>
-              </header>
+                  <Link to='/'></Link>
+
+                    <div className='cart-number'>
+                        <Link to='/Cart'><i className={className}></i></Link>
+                            <p className='count'>0</p>
+                                </div>             
+               </header>
         </div>
               <input type='checkbox' id='nav-toggle' className='nav-toggle'></input>
-              <nav>
+                <nav>
                     <ul>
                       <Link to='/' className='links'> Home </Link> 
-                      <Link to="/CartItems" className='links'> CartItems </Link>  
-                      <Link to='/Cart' className='links'>Cart</Link>
-                    </ul>   
-              </nav>
+                        <Link to="/CartItems" className='links'> CartItems </Link>  
+                          <Link to='/Cart' className='links'>Cart</Link>
+                            </ul>   
+                </nav>
 
             <label for="nav-toggle" className='nav-toggle-label'>  
               <span> </span> 

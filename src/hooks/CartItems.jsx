@@ -3,7 +3,7 @@ import { Context } from '../Pages/useContext'
 
 export default function CartItems({item}) {
     const {removeFromCart, cartItems, toggleFavorite, addToCart} = useContext(Context)
-    const {_id, name, price, description, image } = item
+    const {_id, name, price, description, image} = item
    
     // const deleteIconDisplay = hovered? "ri-delete-bin-fill": "ri-delete-bin-line"
     // const image = cartItems.map(item => item.image)

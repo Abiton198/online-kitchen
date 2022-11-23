@@ -11,20 +11,23 @@ import blob from '../assets/blob-home.svg'
    
     <div className='hom'>
     
-          <div className='sub-head'>
+          {/* <div className='sub-head'>
               <h4 className='heading'>This is my Home</h4>
-          </div>
-
+                </div> */}
+                <img src={cover} alt='' className='cover-photo'/>
+{/* 
             <div className='image'>
-                <img src={blob} alt=''/>
-                <p className='text'>Delicious Food</p>
-                {/* <img src={cover} alt='' className='cover-photo'/> */}
-            </div>
+                  <p className='text'>Delicious Food</p>
+                 <img src={cover} alt='' className='cover-photo'/> *
+                    </div> */}
 
-            
+            <div className='text'>
+              <h1>Home of delicious food</h1>
+                </div>
+
               <div className='button'>
                  <button onClick={viewMenu}> Order Now </button>
-              </div>
+                    </div>
 
               
     </div>
