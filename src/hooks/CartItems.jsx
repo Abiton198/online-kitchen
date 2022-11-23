@@ -17,7 +17,7 @@ export default function CartItems({item}) {
              >
             </i> */}
               <img src={image} width="130px" />
-              <p>{price}</p>
+              <p>ZAR {price}</p>
               <p>{name}</p>
               <p>{description}</p>
             
