@@ -1,38 +1,63 @@
 import React from 'react'
-import cover from '../img/food.jpeg'
+import foodway from '../img/foodway.png'
 import blob from '../assets/blob-home.svg'
+import food from '../img/food.jpeg'
+import foodplant from '../img/foodplant.png'
 
  function Home(){
 
   function viewMenu(){
+
+
    
   }
   return (
    
     <div className='hom'>
-    
-          {/* <div className='sub-head'>
-              <h4 className='heading'>This is my Home</h4>
-                </div> */}
-                {/* <img src={cover} alt='' className='cover-photo'/> */}
-{/* 
-            <div className='image'>
-                  <p className='text'>Delicious Food</p>
-                 <img src={cover} alt='' className='cover-photo'/> *
-                    </div> */}
 
+              <div className='carosel'>
 
-<div className='my-home'>
+                      <div className='home-image home-image-visible'>
+                        <img src={foodway} alt='' className='cover-photo'/>
+                          </div>
+
+                          <div className='home-image'>
+                            <img src={blob} alt='' className='cover-photo'/>
+                              </div>
+
+                              <div className='home-image'>
+                                <img src={foodplant} alt='' className='cover-photo'/>
+                                  </div>
+
+                                  <div className='home-image'>
+                                    <img src={food} alt='' className='cover-photo'/>
+                                      </div>
+
+                          <div className='control'>
+                            <button id='image-prev-slide' aria-label='Previous Slide'> 
+                              <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                                </button>
+
+                            <button id='image-next-slide' aria-label='Next Slide'> 
+                              <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </button>
+                          </div>
+              </div>
+
+          <div className='my-home'>
 
             <div className='text'>
               <h1>Home of delicious food</h1>
-                <p>Our job is to filling your Yummy Delicious food quick response andfast delivery</p>
-                </div>
+                <p>Our job is to filling your Yummy Delicious food quick response and fast delivery.
+                Our job is to filling your Yummy Delicious food quick response and fast delivery.
+                Our job is to filling your Yummy Delicious food quick response and fast delivery.
+                </p>
+                  </div>
 
               <div className='button'>
                  <button onClick={viewMenu}> Order Now </button>
                     </div>
-</div>
+          </div>
 
               
     </div>

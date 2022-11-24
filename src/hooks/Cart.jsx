@@ -29,7 +29,7 @@ function placeOrder(){
 
 {cartItems > 0 ?
 <div className='order-button'>
-  <button onClick={placeOrder}>{buttonText}</button>
+  <button onClick={placeOrder} className='order-button'>{buttonText}</button>
 </div>
 :
 

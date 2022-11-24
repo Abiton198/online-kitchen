@@ -10,6 +10,7 @@ export default function NavBar() {
     <div className='my-nav'>
       <div className='nav-display'>
         <div className='bar-display'>
+          <div></div>
               <h3 className='logo'>Food_My_Way</h3>
               <header>
                   <Link to='/'></Link>

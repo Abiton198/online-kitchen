@@ -3,11 +3,11 @@ body{
   padding: 0;
   align-items: center;
   /* background-color: #549A0A; */
-  background-image: url('./img/foodplant.png');
+  /* background-image: url('./img/foodplant.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 30vh;
+  height: 30vh; */
 }
 .app {
   margin-top: 0;
@@ -130,13 +130,13 @@ body{
   }
   
   /* ======HOME==== */
+  /* the home image on the carousel */
   .cover-photo {
-    /* border-top-right-radius: 50%; */
-    /* border-bottom-right-radius: 50%;
-    border-radius: 50%; */
-    width: 100%;
-    height: 313px;
+    width: 600px;
+    height: 350px;
+    
   }
+
   button{
     background-color: #549A0A;
     width: 160px;
@@ -144,18 +144,31 @@ body{
     border-radius: 10px;
 
   }
+  /* div with text + order button */
   .my-home{
-    /* display:flex;
-    flex-direction: row; */
-    /* justify-content:space-around; */
-    margin-top: 450px;
-    
-   
-  
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 15px;
+    line-height: 35px;
+
     
   }
   .button{
     margin-top: 30px;
+  }
+
+  /* arrows to move images */
+  #image-next-slide, #image-prev-slide {
+background-color: white;
+border: none;
+font-size: 30px;
+margin: 0;
+padding: 15%;
+
   }
 
   .sub-head{
@@ -168,6 +181,38 @@ body{
     color: rgb(65, 65, 3);
     background-position-x: center;
     position: relative;
+  }
+  .hom{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #549A0A; */
+    margin: 0;
+  }
+
+  .carosel{
+    display: inline-block;
+    width: 600px;
+    padding: 0px;
+    height: 325px;
+    border: yellow solid;
+  
+  }
+  
+  .home-image{
+    position: absolute;
+  } 
+  .control{
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    width: 80%;
+    transform:translateY(50%);
+  }
+  
+  .image-prev-slide{
+    
+    background-color: #1ce681;
   }
 
   /* ======ABOUT=== */
@@ -229,8 +274,10 @@ body{
 }
 
 @media (max-width:700px) {
-  .hom{
-    margin: 50px;
+  .text, .button, .my-home{
+    margin: 5px;
+    padding: 0;
+    /* border: red solid; */
   }
   .my-nav{
     margin: 0;
@@ -243,5 +290,9 @@ body{
   }
   .cover-photo{
     margin-top: 20px;
+  }
+  .logo{
+    margin-left: 100px;
+    
   }
 }
