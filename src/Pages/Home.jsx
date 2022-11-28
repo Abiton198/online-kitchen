@@ -34,11 +34,11 @@ import foodplant from '../img/foodplant.png'
                                       </div>
 
                           <div className='control'>
-                            <button id='image-prev-slide' aria-label='Previous Slide'> 
+                            <button className='image-prev-slide' aria-label='Previous Slide'> 
                               <i class="fa-sharp fa-solid fa-arrow-left"></i>
                                 </button>
 
-                            <button id='image-next-slide' aria-label='Next Slide'> 
+                            <button className='image-slide' aria-label='Next Slide'> 
                               <i class="fa-sharp fa-solid fa-arrow-right"></i>
                                 </button>
                           </div>

@@ -16,7 +16,7 @@ export default function CartItems({item}) {
                 onClick={()=>removeFromCart(item.id)}
              >
             </i> */}
-              <img src={image} width="130px" />
+              <img src={image} className='menu-img' />
               <p>ZAR {price}</p>
               <p>{name}</p>
               <p>{description}</p>

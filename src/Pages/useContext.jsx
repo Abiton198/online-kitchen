@@ -5,16 +5,16 @@ const Context = React.createContext()
 function ContextProvider({children}){
     const{cartItems, setCartItems} = useState([])
     const{isFavorite, setIsFavorite} = useState(false)
-    const{homeImages, setHomeImages} = useState([]) //home page images
+//     const{homeImages, setHomeImages} = useState([]) //home page images
 
-    const url = 'https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json'
-//fetch images from API an display on home page
-useEffect(()=>{
-    fetch(url)
-    .then(res => res.json())
-    .then(data => setHomeImages(data))
-    // .then(data => console.log(data))
-},[])
+//     const url = 'https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json'
+// //fetch images from API an display on home page
+// useEffect(()=>{
+//     fetch(url)
+//     .then(res => res.json())
+//     .then(data => setHomeImages(data))
+//     // .then(data => console.log(data))
+// },[])
 
     // func to add a new item selected by client to update cart
     function addToCart(newItem){
@@ -53,8 +53,8 @@ return(
                               addToCart,
                              removeFromCart,
                              toggleFavorite,
-                             emptyCart,
-                             homeImages}}>
+                             emptyCart
+                             }}>
         {children}
     </Context.Provider>
 )
