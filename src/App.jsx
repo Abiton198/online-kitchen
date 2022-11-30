@@ -4,7 +4,7 @@ import './App.css'
 import {Route, Routes} from 'react-router-dom'
 import NavBar from './hooks/NavBar'
 import Cart from './hooks/Cart'
-import CartItems from './hooks/CartItems'
+import Contact from './Pages/Contact'
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
             <NavBar/>
               <Routes>
                     <Route exact path='/' element={<Home/>}/>
-                    <Route path='/CartItems' element={<CartItems />}/>  
+                    <Route path='/Contact' element={<Contact />}/>  
                     <Route path='/Cart' element={<Cart/>}/> 
                     
               </Routes>

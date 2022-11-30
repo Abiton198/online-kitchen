@@ -25,7 +25,7 @@ export default function NavBar() {
                 <nav>
                     <ul>
                       <Link to='/' className='links'> Home </Link> 
-                        <Link to="/CartItems" className='links'> CartItems </Link>  
+                        <Link to="/Contact" className='links'> Contact</Link>  
                           <Link to='/Cart' className='links'>Cart</Link>
                             </ul>   
                 </nav>
