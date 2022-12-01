@@ -18,10 +18,12 @@ export default function CartItems({item}) {
             </i> */}
               <img src={image} className='menu-img' />
               <p>ZAR {price}</p>
+              <hr/>
               <p>{name}</p>
               <p>{description}</p>
-            
-            <button  >Add to Cart</button>
+           
+            <button  >Place Order Now!</button>  
+          
     </div>
     
   )

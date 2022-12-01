@@ -373,7 +373,7 @@ border: #1ce681 solid;
   .social_item{
     border: solid 1px;
     margin: 20px;
-    width: 80%;
+    width: 90%;
     text-decoration: none;
     list-style: none;
     background-color: #a5afaaab;
@@ -420,18 +420,22 @@ border: #1ce681 solid;
     text-align: center;
   }
   .contacts{
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: blueviolet;
+  
   }
   .app{
-    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  
   }
   .my-nav{
-    max-width: 100%;
+    width: 100%;
+    margin: 0;
   }
   .logo-navbar{
     width: 30px;
