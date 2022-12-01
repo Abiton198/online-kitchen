@@ -9,6 +9,8 @@ export default function Contact() {
                 <h1>Find Us</h1>
                     </div>
 
+    <div className='img-contact-motto'>
+
         <div className='img-icons'>
 
             <div className='contact-img'>
@@ -41,6 +43,12 @@ export default function Contact() {
                 <img src={foodmy} alt='Food My Way' width='240px' className='contact-image'/>
                     </div>           
         </div>
+
+        <div className='payoff-line'>
+            <p className='motto'>Get a life! Making your day another day for you! </p>
+        </div>
+    </div>
+
 
 
     </div>
