@@ -2,10 +2,11 @@ import React from 'react'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Context } from '../Pages/useContext'
+import logo from '../img/logo.png'
 
 export default function NavBar() {
   const {cartItems} = useContext(Context)
-  const className = cartItems > 0 ? "ri-shopping-cart-fill ri-fw ri-2x" :"ri-shopping-cart-line ri-fw ri-2x"
+ 
   return (
     <div className='my-nav'>
       <div className='nav-display'>
@@ -16,8 +17,8 @@ export default function NavBar() {
                   <Link to='/'></Link>
 
                     <div className='cart-number'>
-                        <Link to='/Cart'><i className={className}></i></Link>
-                            <p className='count'>0</p>
+                        <img src={logo} alt='Food_My_Way' className='logo-navbar'/>
+                          
                                 </div>             
                </header>
         </div>
@@ -26,7 +27,7 @@ export default function NavBar() {
                     <ul>
                       <Link to='/' className='links'> Home </Link> 
                         <Link to="/Contact" className='links'> Contact</Link>  
-                          <Link to='/Cart' className='links'>Cart</Link>
+                          <Link to='/Cart' className='links'>Deli</Link>
                             </ul>   
                 </nav>
 

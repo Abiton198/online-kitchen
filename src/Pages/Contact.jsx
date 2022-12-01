@@ -1,10 +1,12 @@
 import React from 'react'
+import foodmyway from '../img/foodmyway.jpg'
 
 export default function Contact() {
   return (
     <div className='contacts'>
 
             <h1>Find Us</h1>
+            <img src={foodmyway} alt='Food My Way' width='200px' className='contact-image'/>
         <ul>
             <li className='social_item'>
                 <a className='whatsapp' href="http://wa.me/0027761272025">
@@ -13,8 +15,8 @@ export default function Contact() {
                             </li>
 
             <li className="social_item">
-                <a className="twitter" href="https://twitter.com/abitondev?ref_src=twsrc%5Etfw">
-                    <i className="fab fa-twitter"></i>
+                <a className="twitter" href="https://web.facebook.com/zanele.saul.5">
+                    <i className="fab fa-facebook"></i>
                         </a></li>
 
             <li className="social_item">
