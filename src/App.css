@@ -330,6 +330,7 @@ border: #1ce681 solid;
     padding: 10px;
     font-size: 25px;
     border-radius: 5px;
+    margin-left: 0px;
   }
 
   .contacts ul {
@@ -349,5 +350,6 @@ border: #1ce681 solid;
   }
   .logo-navbar{
     margin: 10px;
+    margin-right: 20px;
   }
 }
