@@ -16,22 +16,22 @@ import foodplant from '../img/foodplant.png'
     <div className='hom'>
 
               <div className='carosel'>
-
-                      <div className='home-image home-image-visible'>
                         <img src={foodway} alt='' className='cover-photo'/>
+                            <img src={blob} alt='' className='cover-photo'/>
+                                <img src={foodplant} alt='' className='cover-photo'/>
+                                    <img src={food} alt='' className='cover-photo'/>
+{/* 
+                      <div className='home-image home-image-visible'>
                           </div>
 
                           <div className='home-image'>
-                            <img src={blob} alt='' className='cover-photo'/>
                               </div>
 
                               <div className='home-image'>
-                                <img src={foodplant} alt='' className='cover-photo'/>
                                   </div>
 
                                   <div className='home-image'>
-                                    <img src={food} alt='' className='cover-photo'/>
-                                      </div>
+                                      </div> */}
 
                           <div className='control'>
                             <button className='image-prev-slide' aria-label='Previous Slide'> 

@@ -20,7 +20,7 @@ export default function Contact() {
             <div className='contact-icons'>
                     <ul>
                         <li className='social_item'>
-                            <a className='whatsapp' href="http://wa.me/0027761272025"> 
+                            <a className='whatsapp' href="https://wa.me/0027761272025"> 
                                 <i className="fab fa-whatsapp"></i>
                                     </a> Let's talk now!
                                         </li>
@@ -45,7 +45,7 @@ export default function Contact() {
         </div>
 
         <div className='payoff-line'>
-            <p className='motto'>Get a life! Making your day another day for you! </p>
+            <p className='motto'>Welcome to life! Making deli day for you! </p>
         </div>
     </div>
 

@@ -138,8 +138,8 @@ body{
   /* ======HOME==== */
   /* the home image on the carousel */
   .cover-photo {
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: fit-content;
     
   }
 
@@ -191,26 +191,25 @@ padding: 15%;
   .hom{
     display: flex;
     flex-direction: column;
-    background-color: #549A0A;
+    /* background-color: #549A0A; */
     margin: 0;
   }
 
   .carosel{
-    display: inline-block;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    grid-auto-rows: 300px;
+    border: red solid;
+    /* width: 100%;
     padding: 0px;
     height: 50vh;
-    /* border: yellow solid; */
+    /* border: yellow solid;
     margin-left: 30px;
-    margin: 150px 30px;
+    margin: 150px 30px; */
   
   }
-  
-  .home-image{
-    position: absolute;
-    width: 100%;
-    height: auto;
-  } 
+ 
   .control{
     position:absolute;
     display: flex;
@@ -219,6 +218,7 @@ padding: 15%;
     top: 50%;
     width: 1px;
     transform:translateY(50%);
+    display: none;
 
   }
   .control button {
