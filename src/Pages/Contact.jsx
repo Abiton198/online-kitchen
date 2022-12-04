@@ -20,7 +20,11 @@ export default function Contact() {
             <div className='contact-icons'>
                     <ul>
                         <li className='social_item'>
-                            <a className='whatsapp' href="https://wa.me/0027761272025"> 
+                            <a 
+                            className='whatsapp' href="https://wa.me/0027761272025"
+                            class='whatsapp_float'
+                            target='_blank'
+                            rel='noopener noreferrer'> 
                                 <i className="fab fa-whatsapp"></i>
                                     </a> Let's talk now!
                                         </li>
