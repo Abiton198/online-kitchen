@@ -138,16 +138,31 @@ body{
   /* ======HOME==== */
   /* the home image on the carousel */
   .cover-photo {
-    width: 100%;
-    height: fit-content;
+    width: 350px;
+    height: 250px;
+    max-width: 100%;
+    /* height: fit-content; */
     
+  }
+  
+  /* making the button rotate */
+  @keyframes button{
+    0%{
+      transform: rotate(0)deg;
+    }
+    100%{
+      transform:rotate(180deg)
+    }
   }
 
   button{
-    background-color: #549A0A;
+
     width: 160px;
-    height: 48px;
-    border-radius: 10px;
+    height: 78px;
+    border-radius: 50px;
+    margin-top: 30px;
+    background-color: #a59ea4;
+    animation: button 5.5s linear infinite;
 
   }
   /* div with text + order button */
@@ -162,9 +177,6 @@ body{
     line-height: 35px;
 
     
-  }
-  .button{
-    margin-top: 30px;
   }
 
   /* arrows to move images */
@@ -191,23 +203,16 @@ padding: 15%;
   .hom{
     display: flex;
     flex-direction: column;
-    /* background-color: #549A0A; */
     margin: 0;
   }
 
   .carosel{
+    margin: 100px 20px 20px 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     grid-gap: 20px;
-    grid-auto-rows: 300px;
-    border: red solid;
-    /* width: 100%;
-    padding: 0px;
-    height: 50vh;
-    /* border: yellow solid;
-    margin-left: 30px;
-    margin: 150px 30px; */
-  
+    grid-auto-rows: 200px;
+ 
   }
  
   .control{
@@ -231,20 +236,9 @@ padding: 15%;
  
 
   /* ======ABOUT=== */
-  /* .about{
-    color: #1ce681;
-  } */
-  /* .about-image{
-    width: 316px;
-    height: 313px;
-    border-radius: 50%;
-  } */
 
   .contacts{
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
-    grid-auto-rows: 250px; */
+  
     display: flex;
     flex-direction: column;
   }
@@ -296,7 +290,6 @@ padding: 15%;
   .menu-image{
     width: 500px;
     height: 300px;
-    border: red solid;
   }
   .menu-img{
     width: 100%;
@@ -365,10 +358,29 @@ padding: 15%;
     margin-left: 100px;
     
   }
-  .carosel{
-max-width: 100%;
-border: #1ce681 solid;
+
+  body{
+    background-image: url('../src/img/home.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
+  .hom{
+  margin-top: 100px;
+   
+  }
+  .home-text{
+    font-size: 50px;
+    font-weight: 900;
+    font-style: oblique;
+  }
+  .carosel{
+display: none;
+  }
+.text{
+  display: none;
+}
  
   .social_item{
     border: solid 1px;

@@ -1,25 +1,20 @@
 import React from 'react'
-import foodway from '../img/foodway.png'
-import blob from '../assets/blob-home.svg'
-import food from '../img/food.jpeg'
-import foodplant from '../img/foodplant.png'
+import fruit from '../img/fruit.png'
+import mainfood from '../img/mainfood.png'
+import mushroom from '../img/mushroom.png'
+import roadrunner from '../img/roadrunner.png'
 
  function Home(){
 
-  function viewMenu(){
-
-
-   
-  }
   return (
    
     <div className='hom'>
 
               <div className='carosel'>
-                        <img src={foodway} alt='' className='cover-photo'/>
-                            <img src={blob} alt='' className='cover-photo'/>
-                                <img src={foodplant} alt='' className='cover-photo'/>
-                                    <img src={food} alt='' className='cover-photo'/>
+                        <img src={fruit} alt='' className='cover-photo'/>
+                            <img src={mainfood} alt='' className='cover-photo'/>
+                                <img src={mushroom} alt='' className='cover-photo'/>
+                                    <img src={roadrunner} alt='' className='cover-photo'/>
 {/* 
                       <div className='home-image home-image-visible'>
                           </div>
@@ -54,8 +49,13 @@ import foodplant from '../img/foodplant.png'
                 </p>
                   </div>
 
+                  <div className='text-small'>
+                    <p className='home-text'>Haven Of Food <br/> <hr/>by ZazaT</p>
+
+                  </div>
+
               <div className='button'>
-                 <button onClick={viewMenu}> Order Now </button>
+                 <button> Food_My_Way</button>
                     </div>
           </div>
 
