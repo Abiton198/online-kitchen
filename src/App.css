@@ -358,14 +358,21 @@ padding: 15%;
     margin-left: 100px;
     
   }
+  .button{
+    display: none;
+  }
 
-  body{
+  .app{
     background-image: url('../src/img/home.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
+
   .hom{
   margin-top: 100px;
    
@@ -374,6 +381,7 @@ padding: 15%;
     font-size: 50px;
     font-weight: 900;
     font-style: oblique;
+    line-height: 1.5;
   }
   .carosel{
 display: none;
@@ -440,11 +448,7 @@ display: none;
     background-color: blueviolet;
   
   }
-  .app{
-    width: 100%;
-    margin: 0;
   
-  }
   .my-nav{
     width: 100%;
     margin: 0;
