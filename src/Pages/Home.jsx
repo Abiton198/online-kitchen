@@ -15,28 +15,7 @@ import roadrunner from '../img/roadrunner.png'
                             <img src={mainfood} alt='' className='cover-photo'/>
                                 <img src={mushroom} alt='' className='cover-photo'/>
                                     <img src={roadrunner} alt='' className='cover-photo'/>
-{/* 
-                      <div className='home-image home-image-visible'>
-                          </div>
 
-                          <div className='home-image'>
-                              </div>
-
-                              <div className='home-image'>
-                                  </div>
-
-                                  <div className='home-image'>
-                                      </div> */}
-
-                          <div className='control'>
-                            <button className='image-prev-slide' aria-label='Previous Slide'> 
-                              <i class="fa-sharp fa-solid fa-arrow-left"></i>
-                                </button>
-
-                            <button className='image-slide' aria-label='Next Slide'> 
-                              <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                                </button>
-                          </div>
               </div>
 
           <div className='my-home'>
@@ -49,14 +28,21 @@ import roadrunner from '../img/roadrunner.png'
                 </p>
                   </div>
 
-                  <div className='text-small'>
-                    <p className='home-text'>Haven Of Food <br/> <hr/>by ZazaT</p>
+                  
+                    <div className='home-text'>
+                     
+                     <p className='tasty'>
+                     Tasty foods for indviduals and companies...
+                      </p> 
+                      <p className='haven'> Food Haven <br/> <hr/>by ZazaT
+                        </p>
+                        </div>
 
-                  </div>
+                 
 
-              <div className='button'>
+              {/* <div className='button'>
                  <button> Food_My_Way</button>
-                    </div>
+                    </div> */}
           </div>
 
               

@@ -5,6 +5,7 @@ import {Route, Routes} from 'react-router-dom'
 import NavBar from './hooks/NavBar'
 import Cart from './hooks/Cart'
 import Contact from './Pages/Contact'
+import home from '../src/img/home.png'
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
                     <Route path='/Cart' element={<Cart/>}/> 
                     
               </Routes>
-         
+              <img src={home} alt='my home image' className='home-img'/>
+      
 
     </div>
   

@@ -2,17 +2,10 @@ body{
   margin: 0;
   padding: 0;
   align-items: center;
-  /* background-color: #549A0A; */
-  /* background-image: url('./img/foodplant.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 30vh; */
+
 }
 .app {
-  margin-top: 0;
-  /* background-color: #1ce681; */
-  /* background-color: saddlebrown; */
+  margin-top: 0px;
 }
 
 /* NAVBAR */
@@ -20,10 +13,12 @@ body{
 .my-nav{
   background-color: silver;
   text-align: center;
-  position:absolute;
+  position:relative;
   z-index: 999;
   width: 100%;
   margin: 0;
+  color: #b109a3;
+ 
  
   }
 
@@ -144,27 +139,11 @@ body{
     /* height: fit-content; */
     
   }
+  .home-img{
+    display: none;
+  }
   
-  /* making the button rotate */
-  @keyframes button{
-    0%{
-      transform: rotate(0)deg;
-    }
-    100%{
-      transform:rotate(180deg)
-    }
-  }
 
-  button{
-
-    width: 160px;
-    height: 78px;
-    border-radius: 50px;
-    margin-top: 30px;
-    background-color: #a59ea4;
-    animation: button 5.5s linear infinite;
-
-  }
   /* div with text + order button */
   .my-home{
     display: flex;
@@ -177,16 +156,6 @@ body{
     line-height: 35px;
 
     
-  }
-
-  /* arrows to move images */
-  #image-next-slide, #image-prev-slide {
-background-color: white;
-border: none;
-font-size: 30px;
-margin: 0;
-padding: 15%;
-
   }
 
   .sub-head{
@@ -285,46 +254,26 @@ padding: 15%;
 
   /* =====MENU=== */
   .menu{
-    background-color: #1ce681;
+     display: flex; 
   }
-  .menu-image{
-    width: 500px;
-    height: 300px;
-  }
+ 
   .menu-img{
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 150px;
+    margin-right: 100px;
     border-radius: 30%;
   }
-
-  /* ======ICONS===== */
-
-.favorite {
-  color: var(--red);
-  font-size: 1.2rem;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  cursor: pointer;
+  .description {
+    margin-left: 30px;
+  }
+  .cart-item{
+    display: flex;
+    justify-content:flex-start;
+  }
+.cart-page{
+  margin: 0;
 }
 
-.ri-heart-fill {
-  opacity: .7;
-}
-
-.ri-delete-bin-line, .ri-delete-bin-fill {
-  font-size: 1.3em;
-  cursor: pointer;
-}
-
-.cart {
-  color: var(--blue);
-  font-size: 1.2rem;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  cursor: pointer;
-}
 
 .cart-item {
   width: 80%;
@@ -336,10 +285,10 @@ padding: 15%;
 }
 
 @media (max-width:700px) {
-  .text, .button, .my-home{
+  .text, .button{
     margin: 5px;
     padding: 0;
-    /* border: red solid; */
+    border: red solid;
   }
   .my-nav{
     margin: 0;
@@ -347,9 +296,7 @@ padding: 15%;
   .bar-display {
     position:relative;
   }
-  .app{
-    position:absolute;
-  }
+  
   .cover-photo{
     margin-top: 20px;
     width: 100%;
@@ -362,34 +309,19 @@ padding: 15%;
     display: none;
   }
 
-  .app{
-    background-image: url('../src/img/home.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
+  
   .hom{
-  margin-top: 100px;
-   
+    margin-top: 0px;
+    
   }
-  .home-text{
-    font-size: 50px;
-    font-weight: 900;
-    font-style: oblique;
-    line-height: 1.5;
-  }
+  
   .carosel{
-display: none;
+    display: none;
   }
-.text{
-  display: none;
-}
- 
+  .text{
+    display: none;
+  }
+  
   .social_item{
     border: solid 1px;
     margin: 20px;
@@ -450,10 +382,56 @@ display: none;
   }
   
   .my-nav{
-    width: 100%;
+    width: 100vw;
     margin: 0;
+    padding: 0;
   }
   .logo-navbar{
     width: 30px;
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .home-img{
+  
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    /* position: absolute */
+
+  }
+  .hom{
+  
+    background-image: url('../src/img/home.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+
+  }
+  .home-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: oblique;
+    line-height: 1.5;
+    opacity: 1;
+  }
+  .tasty{
+    font-size: 15px;
+    opacity: 1;
+  }
+  .haven{
+    opacity: 1;
+  }
+  hr{
+    color: white;
+    width: 100%;
   }
 }
