@@ -16,7 +16,7 @@ const cartItemElements = menuData.map((item) => (<CartItems key={item.id} item={
     <main className='cart-page'>
         <p>{cartItemElements}</p>
 
-          <h1>Kindly place an order now! DM</h1>
+          <h1 className='place-order'>Kindly place an order now! DM</h1>
 
     </main>
   )

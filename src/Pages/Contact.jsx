@@ -6,12 +6,10 @@ export default function Contact() {
   return (
     <div className='contacts'>
             <div className='heading-contact'>
-                <h1>Find Us</h1>
+                <h1 className='find-us'>Find Us</h1>
                     </div>
 
-    <div className='img-contact-motto'>
-
-        <div className='img-icons'>
+    <div className='img-icons'>
 
             <div className='contact-img'>
                 <img src={foodmyway} alt='Food My Way' width='200px' className='contact-image'/>
@@ -45,16 +43,13 @@ export default function Contact() {
 
              <div className='contact-img'>
                 <img src={foodmy} alt='Food My Way' width='240px' className='contact-image'/>
-                    </div>           
-        </div>
-
-        <div className='payoff-line'>
-            <p className='motto'>Welcome to life! Making deli day for you! </p>
-        </div>
+                    </div>  
     </div>
 
+                <div className='payoff-line'>
+                    <p className='motto'>Welcome to life! Making deli day for you! </p>
+                        </div>
 
-
-    </div>
+</div>
   )
 }

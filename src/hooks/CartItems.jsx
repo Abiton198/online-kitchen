@@ -14,8 +14,8 @@ export default function CartItems({item}) {
               <div>
                   <img src={image} className='menu-img' />
               </div>
-             
                   <hr/>
+             
               <div className='description'>
                 <p>ZAR {price}</p>
                     <p>{name}</p>
