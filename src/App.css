@@ -284,7 +284,7 @@ body{
   grid-template-columns: auto;
 }
 
-@media (max-width:700px) {
+@media (max-width:350px) {
   .text, .button{
     margin: 5px;
     padding: 0;
@@ -385,6 +385,7 @@ body{
     width: 100vw;
     margin: 0;
     padding: 0;
+    position: fixed;
   }
   .logo-navbar{
     width: 30px;
@@ -404,14 +405,24 @@ body{
     /* position: absolute */
 
   }
+  /* position=fixed ====to make the img fill the whole page without moving */
   .hom{
-  
+  position: fixed; 
     background-image: url('../src/img/home.png');
     background-position: center;
     background-size: cover;
     opacity: 0.8;
-
-  }
+    height: 100vh;
+     }
+     .app{
+      position:inherit;
+      width: 100%;
+     
+     }
+     .cart-page{
+      position: fixed;
+      width: 100vh;
+     }
   .home-text{
     display: flex;
     flex-direction: column;
@@ -434,4 +445,9 @@ body{
     color: white;
     width: 100%;
   }
+}
+
+@media (max-width:600px) {
+
+  
 }
